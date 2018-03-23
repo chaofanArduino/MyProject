@@ -33,6 +33,9 @@ class URLManager:
 
     def size(self):
         return self.__url_queue.qsize()
+
+    def is_url(self):
+        pass
     pass
 
 
@@ -43,6 +46,8 @@ if __name__ == '__main__':
         'https://www.zhihu.com/question/21094489'
     ]
     url_manager.put_url(list_url)
+    print(url_manager.get_url())
+    print(url_manager.get_url())
     print(url_manager.get_url())
     print(url_manager.get_url())
     pass

@@ -20,8 +20,8 @@ class XMLParser:
     def get_item(self):
         return self.__dict_item
 
-    def parser(self, html):
-        selector = etree.HTML(html)
+    def parser(self, str_html):
+        selector = etree.HTML(str_html)
         self.__list_url = selector.xpath('//li/a/@href')
         pass
 
